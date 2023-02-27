@@ -21,17 +21,6 @@ function iniciarAccordion() {
 }
 iniciarAccordion();
 
-
-
-// const sections = document.querySelectorAll('.js-scroll');
-
-// function animaScroll() {
-//   console.log('Sim');
-// }
-
-// window.addEventListener('scroll', animaScroll);
-
-
 function iniAnimacaoScroll() {
   const sections = document.querySelectorAll('.js-scroll');
 

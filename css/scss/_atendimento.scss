@@ -1,0 +1,34 @@
+.atendimento {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 96px 0;
+}
+
+.atendimento button {
+  display: block;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid $c3;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.pergunta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $c5;
+}
+
+.resposta {
+  padding: 4px;
+  max-width: 600px;
+  overflow: hidden;
+  color: $c4;
+}

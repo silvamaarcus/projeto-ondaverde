@@ -1,0 +1,93 @@
+.planos-footer {
+  background-color: $p0;
+}
+.planos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.planos-info {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 64px;
+}
+
+.planos-info h1 {
+  line-height: normal;
+  background-image: $g1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.planos-info p {
+  color: $c6;
+}
+
+.planos-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 120px;
+}
+
+.card {
+  border: 2px solid #0000;
+  border-radius: 24px;
+  background: linear-gradient($p0, $p0) padding-box, $g1 border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 56px;
+  gap: 8px;
+  position: relative;
+}
+
+.card img {
+  border-radius: 24px;
+}
+
+.card h3 {  
+  text-align: center;
+  color: $c6;
+}
+
+.card ul {
+  text-align: center;
+}
+
+.card ul li {
+  font-family: "Mukta", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  text-align: center;
+  color: $c5;
+  padding: 8px;
+  border-bottom: 2px solid #0000;
+  background: linear-gradient($p0, $p0) padding-box, $g1 border-box;
+}
+
+@media (max-width: 1000px) {
+  .planos-info {
+    text-align: left;
+  }
+
+  .planos-info h1 {
+    font-size: 3rem;
+    padding: 24px;
+  }
+
+  .planos-info p {
+    font-size: 1.5rem;
+    padding: 0 24px;
+  }
+
+  .planos-cards {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 24px 120px 24px;
+  } 
+}

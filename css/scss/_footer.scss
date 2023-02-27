@@ -1,0 +1,54 @@
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 120px;
+  padding-bottom: 120px;
+}
+
+.footer h4 {  
+  color: $c6;
+}
+
+.footer p,
+a {
+  color: $c3;
+  padding: 8px 0;
+}
+
+.separador {
+  border-bottom: 2px solid #0000;
+  background: linear-gradient($p0, $p0) padding-box, $g1 border-box;
+}
+
+.footer-contato-icons {
+  padding-top: 16px;
+  display: flex;
+  gap: 32px;
+}
+
+.footer-info nav {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding-left: 24px;
+  }
+
+  .separador {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-left: 24px;
+  }
+}

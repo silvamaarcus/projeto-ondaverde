@@ -1,0 +1,71 @@
+.section-bg-gradient {
+  background: $g2;
+}
+
+.formulario {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 64px;
+}
+
+.formulario h2 {
+  color: $c6;
+  margin-bottom: 32px;
+}
+
+.formulario form {
+  max-width: 1200px;
+  border: 2px solid $p3;
+  border-radius: 12px;
+  background-color: rgba(122, 132, 121, 0.05);
+  text-align: left;
+  padding: 24px;
+}
+
+.formulario h4 {
+  color: $c6;
+}
+
+.formulario input {
+  width: 100%;
+  border-radius: 12px;
+  background-color: transparent;
+  border: 2px solid rgba(217, 217, 217, 0.25);
+  padding: 4px 8px;
+  margin: 24px 0;
+
+  font-family: "Mukta", sans-serif;
+  color: $c6;
+  font-size: 1.2rem;
+  line-height: 1rem;
+}
+input:focus {
+  border-color: $p3;
+  outline: none; 
+}
+
+.formulario button {
+  border: none;
+  margin-right: 64px;
+}
+
+.formulario span {
+  font-family: "Mukta", sans-serif;
+  color: $c6;
+  font-size: 1.2rem;
+  line-height: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.formulario span:hover {
+  color: rgba(150, 224, 114, 0.9);
+}
+
+body {
+  background-color: $p0;
+}
+
+.footer {
+  margin-top: 120px;
+}

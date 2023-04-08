@@ -188,6 +188,21 @@ li, a {
     max-width: 400px;
   }
 }
+@media (max-width: 400px) {
+  .container {
+    box-shadow: none;
+    padding-bottom: 100px;
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao-texto {
+    max-width: 300px;
+  }
+  .introducao-texto h1 {
+    font-size: 2rem;
+  }
+}
 .beneficios {
   max-width: 1200px;
   padding: 40px 20px;
@@ -235,6 +250,17 @@ li, a {
   .beneficios-texto h1,
   .beneficios-texto p {
     text-align: left;
+  }
+}
+@media (max-width: 400px) {
+  .beneficios-texto {
+    max-width: 300px;
+  }
+  .beneficios-texto h1 {
+    font-size: 2rem;
+  }
+  .beneficios-texto p {
+    font-size: 1.5rem;
   }
 }
 .planos-footer {
@@ -324,7 +350,17 @@ li, a {
   .planos-cards {
     grid-template-columns: 1fr;
     gap: 40px;
-    padding: 0 24px 120px 24px;
+  }
+}
+@media (max-width: 400px) {
+  .planos-footer {
+    margin-top: 100px;
+    grid-template-columns: 1fr;
+  }
+  .planos-info {
+    text-align: left;
+    padding-top: 32px;
+    padding-bottom: 64px;
   }
 }
 .footer {

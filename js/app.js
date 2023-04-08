@@ -3,18 +3,14 @@ function iniciarAccordion() {
     item.style.maxHeight = 0;
   });
 
-  document.querySelectorAll('.accordion-btn').forEach(button => {
-
-    button.addEventListener('click', () => {
-
-      const accordionContent = button.nextElementSibling;
-
-      button.classList.toggle('active');
-
-      if (button.classList.contains('active')) {
-        accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+  document.querySelectorAll('.accordion-btn').forEach(botao => {
+    botao.addEventListener('click', () => {
+      const accordionConteudo = botao.nextElementSibling;
+      botao.classList.toggle('active');
+      if (botao.classList.contains('active')) {
+        accordionConteudo.style.maxHeight = accordionConteudo.scrollHeight + 'px';
       } else {
-        accordionContent.style.maxHeight = 0;
+        accordionConteudo.style.maxHeight = 0;
       }
     });
   });
@@ -38,9 +34,7 @@ function iniAnimacaoScroll() {
         }
       });
     }
-
     animaScroll();
-
     window.addEventListener('scroll', animaScroll);
   }
 }

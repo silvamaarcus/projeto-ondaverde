@@ -232,15 +232,10 @@ body {
   background-color: #040c06;
 }
 
-.footer {
-  margin-top: 120px;
-}
-
 .atendimento {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   padding: 96px 0;
@@ -269,4 +264,15 @@ body {
   max-width: 600px;
   overflow: hidden;
   color: #8a8787;
+}
+
+@media (max-width: 400px) {
+  .atendimento {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .pergunta,
+  .resposta {
+    padding: 0 24px;
+  }
 }/*# sourceMappingURL=login.css.map */
